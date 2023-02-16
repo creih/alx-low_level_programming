@@ -1,4 +1,5 @@
 #include <stdio.h>
 int main(void){
-return 0;
+	printf("c is fun")
+	return 0;
 }
