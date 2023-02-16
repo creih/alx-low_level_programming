@@ -13,7 +13,7 @@ int main(void)
 	printf("Size of an int: %d byte(s)\n", sizeof(integer));
 	long long_int;
 	
-	printf("Size of a long int: %lu byte(s)\n", sizeof(long_int));
+	printf("Size of a long int: %ld byte(s)\n", sizeof(long_int));
 	long long longer_int;
 	
 	printf("Size of a long long int: %lld byte(s)\n", sizeof(longer_int));
