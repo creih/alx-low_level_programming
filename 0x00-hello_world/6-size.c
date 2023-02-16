@@ -20,6 +20,7 @@ int main(void)
 	float decimal;
         
 	printf("Size of a float: %f byte(s)\n", sizeof(decimal));
+	return (0)
 
 }
 
