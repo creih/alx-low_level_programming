@@ -1,0 +1,3 @@
+#!/bin/bash
+cat main.c
+export CFILE=main.c
