@@ -1,7 +1,7 @@
 #include <stdio.h>
 /*
  * main of this file
- * */
+*/
 int main(void)
 {
 	/*here main starts*/
