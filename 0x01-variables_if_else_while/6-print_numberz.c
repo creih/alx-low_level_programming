@@ -10,9 +10,9 @@ int main(void)
 	numberz = 0;
 	while (numberz < 10)
 	{
-		putchar(48+numberz);
-		numberz++;
+		putchar(48 + numberz);
+		numberz ++;
 	}
 	putchar('\n');
-	return 0;
+	return (0);
 }
