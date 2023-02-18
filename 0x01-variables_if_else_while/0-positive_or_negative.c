@@ -4,7 +4,7 @@
 #include <stdio.h>
 /* betty style doc for function main goes there */
 /**
- * main function is under here
+ * main -function is under here
  * Return: (0) for succesful execution
  */
 int main(void)
