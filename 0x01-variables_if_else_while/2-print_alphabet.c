@@ -1,3 +1,4 @@
+/* creaing a list of alphabets*/
 #include <stdio.h>
 /**
  * main here we' ll print alphabets
