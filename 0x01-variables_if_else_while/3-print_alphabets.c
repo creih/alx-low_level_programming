@@ -1,12 +1,15 @@
 #include <stdio.h>
+/*end of headers*/
 /**
- * main function will be here
+ * main -function will be here
  * and we'll display alpabets
- * Return: will be (0) if successful
+ * Return: (0) if successful
  */
 int main(void)
 {
 	int alphabets;
+	
+	/*for to loop through all alphabets*/
 	for (alphabets = 'a'; alphabets <= 'z'; alphabets++)
 	{
 		putchar(alphabets);
