@@ -6,10 +6,10 @@
 int main(void)
 {
 	int alphabet;
-	
-	for(alphabet = 'a'; alphabet <= 'z'; alphabet++)
+
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 	{
-		if(alphabet == 'q' || alphabet == 'e')
+		if (alphabet == 'q' || alphabet == 'e')
 		{
 			continue;
 		}
@@ -19,5 +19,5 @@ int main(void)
 		}
 	}
 	putchar('\n');
-	return 0;
+	return (0);
 }
