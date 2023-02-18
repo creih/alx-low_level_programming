@@ -7,7 +7,7 @@
 int main(void)
 {
 	int character;
-	/*trying to fix short descrition errors
+	/*trying to fix short descrition errors*/
 	for (character = 'a'; character <= 'z'; character++)
 	{
 		putchar(character);
