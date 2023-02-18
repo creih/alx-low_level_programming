@@ -18,6 +18,6 @@ int main(void)
 			putchar(48 + (base_16 % 10));
 		}
 	}
-	putchar('\n')
+	putchar('\n');
 	return (0);
 }
