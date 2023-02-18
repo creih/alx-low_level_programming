@@ -11,7 +11,7 @@ int main(void)
 	{
 		if (base_16 >= 10)
 		{
-			putchar(97+(base_16 % 10));
+			putchar(97 + (base_16 % 10));
 		}
 		else
 		{
