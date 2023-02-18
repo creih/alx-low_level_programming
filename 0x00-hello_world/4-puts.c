@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- * main of this file
+ * main -of this file
+ * Return: (0) for success
  */
 int main(void)
 {
