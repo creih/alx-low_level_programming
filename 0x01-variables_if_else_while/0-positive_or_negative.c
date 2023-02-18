@@ -5,7 +5,8 @@
 /* betty style doc for function main goes there */
 /**
  * main function is under here
- * Return (0) for succesful execution
+ * Return: (0) for succesful execution
+ */
 int main(void)
 {
 	int n;
