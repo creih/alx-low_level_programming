@@ -5,13 +5,13 @@
  */
 int main(void)
 {
-	int c = 0,count = 0, a = 1, b = 2;
+	long c = 0,count = 0, a = 1, b = 2;
 
-	printf("%d, %d", a, b);
+	printf("%ld, %ld", a, b);
 	while (count < 98)
 	{
 		c = a + b;
-		printf(", %d", c);
+		printf(", %ld", c);
 		a = b;
 		b = c;
 		count++;
