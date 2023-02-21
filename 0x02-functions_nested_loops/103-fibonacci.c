@@ -11,7 +11,7 @@ int main(void)
 	while (c < 4000000)
 	{
 		c = a + b;
-		if (sum > 0)
+		if (sum % 2 ==  0)
 		{
 			sum = sum + c;
 			a = b;
