@@ -5,15 +5,16 @@
  */
 int main(void)
 {
-	int c = 0, a = 1, b = 2;
-	
-	printf("%d, %d, ", a,b);
-	while(c <= 98)
+	int c = 0,count = 0, a = 1, b = 2;
+
+	printf("%d, %d", a, b);
+	while (count < 98)
 	{
 		c = a + b;
-		printf("%d", c);
+		printf(", %d", c);
 		a = b;
 		b = c;
+		count++;
 	}
 	return (0);
 }
