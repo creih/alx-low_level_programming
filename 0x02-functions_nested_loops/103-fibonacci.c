@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	long long sum = 0, a = 1, b = 2, c = 0;
+	long sum = 0, a = 1, b = 2, c = 0;
 
 	sum = a + b + c;
 	while (c < 4000000)
@@ -21,6 +21,6 @@ int main(void)
 		a = b;
 		b = c;
 	}
-	printf("%lld\n", sum);
+	printf("%ld\n", sum);
 	return (0);
 }
