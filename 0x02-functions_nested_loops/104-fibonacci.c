@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	long c = 0,count = 0, a = 1, b = 2;
+	long c = 0, count = 0, a = 1, b = 2;
 
 	printf("%ld, %ld", a, b);
 	while (count < 98)
