@@ -13,7 +13,7 @@ void times_table(void)
 		{
 			prod = x * y;
 			_putchar(prod + '0');
-			if(prod < 81)
+			if (prod < 81)
 			{
 				_putchar(',');
 				_putchar(' ');
