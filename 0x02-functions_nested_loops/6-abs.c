@@ -1,4 +1,4 @@
-#include "msin.h"
+#include "main.h"
 /**
  * _abs - calculates absolute value
  * @: parameterto be checked
