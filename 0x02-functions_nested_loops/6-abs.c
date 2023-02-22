@@ -1,10 +1,10 @@
 #include "main.h"
 /**
  * _abs - calculates absolute value
- * @: parameterto be checked
+ * @num: parameterto be checked
  * Return: (0) if true
  */
-int _abs(int)
+int _abs(int num)
 {
 	if (num < 0)
 	{
@@ -13,6 +13,6 @@ int _abs(int)
 	}
 	else
 	{
-		retutrn num;
+		return num;
 	}
 }
