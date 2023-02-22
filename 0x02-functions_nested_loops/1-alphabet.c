@@ -1,15 +1,14 @@
-#include "1-main.c"
+#include "main.h"
 /**
- * main - will call this function
- * Return: 0 if true
- */
-int main(void)
+ * print_alphabet -print alphabets
+ * Return: will not return a thing
+ */
+void print_alphabet(void)
 {
-	char word;
+	char character;
 
-	for (word = 'a'; word <= 'z'; word++)
+	for (character = 'a'; character <= 'z'; character++)
 	{
-		_putchar(word);
+		_putchar(character);
 	}
-	return (0);
 }
