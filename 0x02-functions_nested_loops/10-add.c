@@ -1,7 +1,9 @@
 #include "main.h"
 /**
  * add - will give sum
- * Return: (0) is the success 
+ * @x: number a
+ * @y: number b
+ * Return: (0) is the success
  */
 int add(int x, int y)
 {
