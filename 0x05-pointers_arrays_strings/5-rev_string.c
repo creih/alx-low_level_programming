@@ -1,7 +1,7 @@
 #include "main.h"
 #include <string.h>
 /**
- * rev_string(char *s)
+ * rev_string - to revrse
  * @s: ou parameter
  * Return: void
  */
@@ -16,7 +16,7 @@ void rev_string(char *s)
 	for (j = 0; j < i / 2; j++)
 	{
 		chars = *end;
-		*end =*start;
+		*end = *start;
 		*start = chars;
 		start++;
 		end--;
