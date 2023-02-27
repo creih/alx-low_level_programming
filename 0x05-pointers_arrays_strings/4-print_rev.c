@@ -8,9 +8,9 @@ void print_rev(char *s)
 {
 	char *c;
 	int i, size = 0;
-       
+
 	c = s;
-	while(*s)
+	while (*s)
 	{
 		size++;
 		c++;
