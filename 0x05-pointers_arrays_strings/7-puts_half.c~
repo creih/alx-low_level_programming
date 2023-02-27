@@ -14,14 +14,14 @@ void puts_half(char *str)
 	{
 		for (n = size / 2; n <= size; n++)
 		{
-			printf("%d", str[n]);
+			_putchar(str[n]);
 		}
 	}
 	else
 	{
-		for(n = (size - 1) / 2; n <= size; n++)
+		for (n = (size - 1) / 2; n <= size; n++)
 		{
-			printf("%d", str[n]);
+			_putchar(str[n]);
 		}
 	}
 }

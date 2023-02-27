@@ -12,16 +12,17 @@ void puts_half(char *str)
 
 	if (size % 2 == 0)
 	{
-		for (n = size / 2; n <= size; n++)
+		for (n = size / 2; n < size; n++)
 		{
 			_putchar(str[n]);
 		}
 	}
 	else
 	{
-		for (n = (size - 1) / 2; n <= size; n++)
+		for (n = (size - 1) / 2; n < size; n++)
 		{
 			_putchar(str[n]);
 		}
 	}
+	_putchar('\n');
 }
