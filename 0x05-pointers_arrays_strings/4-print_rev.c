@@ -6,13 +6,11 @@
  */
 void print_rev(char *s)
 {
-	while (*s != '\0')
+	int jump, size = _strlen(*s);
+
+	for (jump = 0; jump < size; jump++)
 	{
-		s++;
-	}
-	while (*s != '\0')
-	{
+		swap_int(*s[jump], *s[size - jump - 1]);
 		_putchar(*s);
-		--s;
 	}
 }
