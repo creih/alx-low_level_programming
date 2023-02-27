@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 /**
  * rev_string - to revrse
  * @s: ou parameter
@@ -11,11 +10,10 @@ void rev_string(char *s)
 	int i, size = 0;
 
 	c = s;
-	while(*s)
+	while (*c)
 	{
 		size++;
 		c++;
-		s++;
 	}
 	for (i = 0; i < size; i++)
 	{
