@@ -7,10 +7,20 @@
  */
 void puts_half(char *str)
 {
-	int size = _strlen(str), i;
+	int size = strlen(str), n;
 
-	for (i = size / 2; i <= size; size++)
+	if (size % 2 == 0)
 	{
-		printf("%d", str[i]);
+		for (n = size / 2; n <= size; n++)
+		{
+			printf("%d", str[n]);
+		}
+	}
+	else
+	{
+		for(n = (size - 1) / 2; n <= size; n++)
+		{
+			printf("%d", str[n]);
+		}
 	}
 }
