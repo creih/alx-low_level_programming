@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main.c"
 /**
  * *_strcpy -copies the pointer dest
  * @dest: final place
