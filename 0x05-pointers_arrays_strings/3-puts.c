@@ -1,13 +1,15 @@
 #include "main.h"
 /**
  * _puts - will print all chrs of the string
- * @s: will be the parameter of file
+ * @*s: will be the parameter of file
  * Return: none
  */
 void _puts(char *str)
 {
-	do{
+	while (*str)
+	{
 		_putchar(*str);
-	} while (*str++);
+		*str++
+	}
 	_putchar('\n');
 }
