@@ -7,4 +7,4 @@ void print_rev(char *s);
 void print_array(int *a, int n);
 void puts_half(char *str);
 char *_strcpy(char *dest, char *src);
-void puts(char *str);
+void puts22(char *str);
