@@ -13,7 +13,7 @@ void puts2(char *str)
 	{
 		count++;
 	}
-	for (index = 0; index < count); index += 2)
+	for (index = 0; index < count; index += 2)
 	{
 		_putchar(*str);
 		str += index;

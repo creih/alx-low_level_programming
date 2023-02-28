@@ -7,9 +7,13 @@
  */
 void puts2(char *str)
 {
-	int index;
-
-	for (index = 0; index < strlen(str); index += 2)
+	int index, count = 1;
+	
+	while(*str++)
+	{
+		count++;
+	}
+	for (index = 0; index < count); index += 2)
 	{
 		_putchar(*str);
 		str += index;
