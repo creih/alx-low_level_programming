@@ -9,8 +9,8 @@ void rev_string(char *s)
 	char *c;
 	int i, size = 0;
 
-	c = s;
-	while (*c)
+	c = s
+	while (*s)
 	{
 		size++;
 		c++;
@@ -20,5 +20,4 @@ void rev_string(char *s)
 		--c;
 		_putchar(*c);
 	}
-	_putchar('\n');
 }
