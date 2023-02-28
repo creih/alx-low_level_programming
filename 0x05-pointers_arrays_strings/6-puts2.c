@@ -8,8 +8,8 @@
 void puts2(char *str)
 {
 	int index, count = 1;
-	
-	while(*str++)
+
+	while (*str++)
 	{
 		count++;
 	}
