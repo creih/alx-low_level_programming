@@ -6,9 +6,11 @@
  */
 void puts2(char *str)
 {
+	char *current;
 	if (*str++)
 	{
-		_putchar(++*str);
-		str++;
+		current = str + 2;
+		_putchar(*current);
+		str = current;
 	}
 }
