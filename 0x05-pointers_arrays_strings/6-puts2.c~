@@ -7,6 +7,7 @@
 void puts2(char *str)
 {
 	char *current;
+
 	if (*str++)
 	{
 		current = str + 2;
