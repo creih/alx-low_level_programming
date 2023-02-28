@@ -10,7 +10,7 @@ void puts2(char *str)
 
 	while (*str)
 	{
-		if (--!*str)
+		if (!--*str)
 		{
 			_putchar(str);
 		}
