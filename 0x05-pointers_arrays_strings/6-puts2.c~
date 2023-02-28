@@ -12,7 +12,7 @@ void puts2(char *str)
 	{
 		if (!--*str)
 		{
-			_putchar(str);
+			_putchar(*str);
 		}
 		else
 		{

@@ -19,6 +19,6 @@ void puts2(char *str)
 			current = str + 2;
 			_putchar(*current);
 		}
-		str = current;
+		str = str + 2;
 	}
 }
