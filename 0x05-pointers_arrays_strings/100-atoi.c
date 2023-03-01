@@ -10,7 +10,7 @@ int _atoi(char *s)
 
 	while (*s != '\0')
 	{
-		num = num * 10 + '(*s - 48)';
+		num = num * 10 + (*s - 48);
 	}
 	return (num);
 }
