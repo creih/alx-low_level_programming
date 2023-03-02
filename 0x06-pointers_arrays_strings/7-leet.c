@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *leet - vowels to other chars
+ * leet - vowels to other chars
  * @c: param pointer
  * Return: those changes
  */
