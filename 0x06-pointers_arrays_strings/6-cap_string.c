@@ -42,7 +42,7 @@ char *cap_string(char *c)
 				c[y] = c[y] - ('a' - 'A');
 			}
 		}
-		if (c[y - 1] == '"' ||  c[y - 1] == '(')
+		if (c[y - 1] == '"' || c[y - 1] == '(')
 		{
 			if (c[y] >= 'a' && c[y] <= 'z')
 			{
