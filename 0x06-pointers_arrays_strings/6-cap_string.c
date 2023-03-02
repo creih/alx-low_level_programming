@@ -14,7 +14,7 @@ char *cap_string(char *c)
 	}
 	for (y = 1; c[y] != '\0'; y++)
 	{
-		if (c[y - 1] == ' ' || c[y -1] == '\t')
+		if (c[y - 1] == ' ' || c[y - 1] == '\t')
 		{
 			if (c[y] >= 'a' && c[y] <= 'z')
 			{
