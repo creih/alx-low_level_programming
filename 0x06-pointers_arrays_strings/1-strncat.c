@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_strncat - concate from n index
+ * _strncat - concate from n index
  * @src: first string
  * @dest: second string
  * @n: concatenation point
