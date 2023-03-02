@@ -6,18 +6,14 @@
  * @n: size of arrays
  * Return: nothing
  */
-void reverse_array(int *a, int *b, int n)
+void reverse_array(int *a, int n)
 {
-	int size, i;
+	int s, x = 0;
 
-	n = 0;
-	for (i = 0; a[i] != '\0'; i++)
+	for (s = 0; s < n/2; s++)
 	{
-		size++;
-	}
-	for (n = size; n > 0; n++)
-	{
-		b[n] = *a;
-		a++;
+		x = a[s];
+		a[s] = a[n - s - 1];
+		a[n - s - 1] = x;
 	}
 }
