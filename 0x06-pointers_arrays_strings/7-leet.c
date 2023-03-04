@@ -1,40 +1,26 @@
 #include "main.h"
 /**
- * leet - vowels to other chars
- * @c: param pointer
- * Return: those changes
+ * leet - using_1337
+ * @c: parameter for leet()
+ * Return: final 1337_sting
  */
 char *leet(char *c)
 {
-	int nbr = 0;
+	char *alias = "0011334477";
+	char *letters = "OoLlEeAaTt";
+	int n1, n2;
 
-	while (c[nbr])
+	n1 = 0;
+	while (c[n1] != '\0')
 	{
-		if (c[nbr] == 'a' || c[nbr] == 'A')
+		for (n2 = 0; letters[n2] != '\0'; n2++)
 		{
-			c[nbr] = '4';
+			if (c[n1] == letters[n1])
+			{
+				c[n1] = alias[n2];
+			}
 		}
-		else if (c[nbr] == 'e' || c[nbr] == 'E')
-		{
-			c[nbr] = '3';
-		}
-		else if (c[nbr] == 'o' || c[nbr] == 'O')
-		{
-			c[nbr] = '0';
-		}
-		else if (c[nbr] == 't' || c[nbr] == 'T')
-		{
-			c[nbr] = '7';
-		}
-		else if (c[nbr] == 'l' || c[nbr] == 'L')
-		{
-			c[nbr] = '1';
-		}
-		else
-		{
-			c[nbr] = c[nbr];
-		}
-		nbr++;
+		n1++;
 	}
 	return (c);
 }
