@@ -14,10 +14,7 @@ void print_lines(int n)
 		{
 			_putchar('\n');
 		}
-		else
-		{
-			_putchar(95);
-		}
+		_putchar(95);
 	}
 	_putchar('\n');
 }
