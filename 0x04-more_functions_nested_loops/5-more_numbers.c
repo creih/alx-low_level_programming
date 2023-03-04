@@ -1,4 +1,3 @@
-#include <st
 #include "main.h"
 /**
  * more_numbers - for printing square made of nums
