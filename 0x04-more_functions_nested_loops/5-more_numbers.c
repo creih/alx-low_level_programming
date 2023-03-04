@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <st
 #include "main.h"
 /**
  * more_numbers - for printing square made of nums
@@ -15,13 +15,12 @@ void more_numbers(void)
 			if (numbers > 9)
 			{
 				_putchar((numbers / 10) + '0');
-				_putchar((numbers % 10) + '0');
 			}
 			else
 			{
-				_putchar(numbers + '0');
+				_putchar((numbers % 10) + '0');
 			}
 		}
-		printf('\n');
+		putchar('\n');
 	}
 }
