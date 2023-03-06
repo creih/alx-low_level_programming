@@ -7,9 +7,10 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	char *match = '\0';
+	char *match;
 	int n_1, n_2, n = 0;
 
+	match = '\0';
 	for (n_1 = 0; s[n_1] != '\0'; n_1++)
 	{
 		for (n_2 = 0; accept[n_2] != '\0'; n_2++)
