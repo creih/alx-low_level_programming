@@ -1,4 +1,5 @@
 #include "main.h"
+#include "stddef.h"
 /**
  * _strpbrk - locate occurence in s
  * @s: initial pointer
