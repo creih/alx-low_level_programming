@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_memset -to return address of constant
+ * _memset -to return address of constant
  * @s: pointer_1
  * @b: char constant
  * @n: unsigned param
