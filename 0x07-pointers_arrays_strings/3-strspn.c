@@ -17,10 +17,11 @@ unsigned int _strspn(char *s, char *accept)
 			if (accept[n_2] == s[n_1])
 			{
 				success++;
+				break;
 			}
-			else
+			if (accept == '\0')
 			{
-				continue;
+				break;
 			}
 		}
 	}
