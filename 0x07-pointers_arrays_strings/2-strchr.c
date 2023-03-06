@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_strchr -locate a char
+ * _strchr -locate a char
  * @s: pointer to sth
  * @c: char to locate
  * Return: address of c else null
