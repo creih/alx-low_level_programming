@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_memset -to return address of constant
+ * _memset -to return address of constant
  * @s: pointer_1
  * @b: char constant
  * @n: unsigned param
@@ -8,9 +8,11 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
+	char *new = s;
+
 	for (n = 0; s[n] != '\0'; n++)
 	{
-		s[n] = &b;
+		new = &b;
 	}
-	return (s);
+	return (new);
 }
