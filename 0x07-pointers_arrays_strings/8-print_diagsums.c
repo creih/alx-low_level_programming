@@ -17,7 +17,7 @@ void print_diagsums(int *a, int size)
 			{
 				beg += *(a + x * size + x); 
 			}
-			if ((x + y) == (size-1))
+			if ((x + y) == (size - 1))
 			{
 				last += *(a + x * size + (size - 1 - x));
 			}
