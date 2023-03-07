@@ -17,10 +17,6 @@ char *_strchr(char *s, char c)
 			found = s;
 			break;
 		}
-		else
-		{
-			found = '\0';
-		}
 	}
 	return (found);
 }
