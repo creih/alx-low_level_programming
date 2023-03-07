@@ -11,7 +11,7 @@ char *_strchr(char *s, char c)
 
 	for (n = 0; s[n] != '\0'; n++)
 	{
-		if ((*s)[n] == c)
+		if (*s == c)
 		{
 			break;
 		}
