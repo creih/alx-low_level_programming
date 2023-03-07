@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strchr -locate a char
  * @s: pointer to sth
@@ -16,4 +17,5 @@ char *_strchr(char *s, char c)
 			return (s);
 		}
 	}
+	return (NULL);
 }
