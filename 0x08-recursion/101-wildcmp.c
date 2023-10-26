@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  * wildcmp_recursive - to compare 2 strings
  * @s1: string check from
  * @s2: string checks with
@@ -22,7 +22,7 @@ int wildcmp_recursive(char *s1, char *s2)
 	return (0);
 }
 
-/*
+/**
  * wildcmp - calls the latter function simply
  * @s1: string to check from
  * @s2: string to check with
