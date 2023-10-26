@@ -12,7 +12,7 @@ int _sqrt_recursion(int n)
 	if (high >= low)
 	{
 		mid = (high + low) / 2;
-		if ((mid * mid <= n) && ((mid + 1)+ (mid + 1) > n))
+		if ((mid * mid <= n) && ((mid + 1) + (mid + 1) > n))
 		{
 			return mid;
 		}
@@ -25,5 +25,5 @@ int _sqrt_recursion(int n)
 			return (_sqrt_recursion(mid - 1));
 		}
 	}
-	return -1;
+	return (-1);
 }
