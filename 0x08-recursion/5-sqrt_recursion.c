@@ -13,6 +13,7 @@ int _sqrt_recursive(int n, int low, int high)
 {
 	int mid = (low + high) / 2;
 	int mid_square = mid * mid;
+
 	if (low > high)
 	{
 		return (-1);
