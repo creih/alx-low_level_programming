@@ -2,9 +2,9 @@
 
 /*
  * wildcmp_recursive - to compare 2 strings
- * @s1: string 1
- * @s2: string 2
- * Return: will be 0.
+ * @s1: string check from
+ * @s2: string checks with
+ * Return: 0 for success.
  */
 
 int wildcmp_recursive(char *s1, char *s2)
@@ -24,9 +24,9 @@ int wildcmp_recursive(char *s1, char *s2)
 
 /*
  * wildcmp - calls the latter function simply
- * @s1: string 1
- * @s2: string 2
- * Return: hopefully 0.
+ * @s1: string to check from
+ * @s2: string to check with
+ * Return: 0 for success.
  */
 
 int wildcmp(char *s1, char *s2)
