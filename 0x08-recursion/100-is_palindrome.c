@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * is_palindrome - finds out palindrome
+ * is_palindrome_recursive - finds out palindrome
+ * @s: actual string
+ * @start: beginning index
+ * @end: last index
  * Return: 1 for success
  */
 int is_palindrome_recursive(char *s, int start, int end)
