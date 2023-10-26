@@ -1,8 +1,9 @@
 #include <stdio.h>
+
 /*
  * wildcmp_recursive - to compare 2 strings
- * @s1 string 1
- * @s2 string 2
+ * @s1: string 1
+ * @s2: string 2
  * Return: will be 0.
  */
 
@@ -20,10 +21,11 @@ int wildcmp_recursive(char *s1, char *s2)
 	}
 	return (0);
 }
+
 /*
  * wildcmp - calls the latter function simply
- * @s1 string 1
- * @s2 string 2
+ * @s1: string 1
+ * @s2: string 2
  * Return: hopefully 0.
  */
 
