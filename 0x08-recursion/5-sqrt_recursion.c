@@ -25,5 +25,8 @@ int _sqrt_recursion(int n)
 			return (_sqrt_recursion(mid - 1));
 		}
 	}
-	return (0);
+	else
+	{
+		return (0);
+	}
 }
