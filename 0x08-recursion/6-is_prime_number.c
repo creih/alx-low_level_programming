@@ -18,5 +18,5 @@ int is_prime_number(int n)
 		is_prime_number(n % i); 
 		return (1);
 	}
-	
+	return (0);
 }
