@@ -1,7 +1,7 @@
 #include <stdio.h>
 /*
- *wildcmp - to compare 2 strings
- * Return: will be 0
+ *wildcmp_recursive - to compare 2 strings
+ * Return: will be 0.
  */
 int wildcmp_recursive(char *s1, char *s2)
 {
@@ -15,7 +15,12 @@ int wildcmp_recursive(char *s1, char *s2)
         return wildcmp_recursive(s1 + 1, s2 + 1);
     return 0;
 }
-
+/*
+ * wildcmp - calls the latter function simply
+ * *s1 string 1
+ * *s2 string 2
+ * Return: hopefully 0.
+ */
 int wildcmp(char *s1, char *s2)
 {
     return wildcmp_recursive(s1, s2);
