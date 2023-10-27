@@ -1,4 +1,7 @@
 #!/bin/bash
-gcc -c *.c
-ar -rc liball.a *.o
-ranlib liball.a
+c_files=$(find . -name "*.c")
+for file in $c_files; do
+    gcc -c "$file"
+done
+ar rcs liball.a *.o
+
