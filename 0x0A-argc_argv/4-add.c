@@ -9,13 +9,13 @@
  */
 int is_positive_number(const char *str)
 {
-	while (*str)
-	{
-	if (!isdigit(*str))
-		return (0);
-		str++;
-	}
-	return (1);
+    while (*str)
+    {
+        if (!isdigit(*str))
+            return (0);
+        str++;
+    }
+    return (1);
 }
 
 /**
@@ -33,6 +33,7 @@ int main(int argc, char *argv[])
         printf("0\n");
         return (0);
     }
+
     for (i = 1; i < argc; i++)
     {
         if (!is_positive_number(argv[i]))
@@ -43,7 +44,8 @@ int main(int argc, char *argv[])
 
         sum += atoi(argv[i]);
     }
+
     printf("%d\n", sum);
+
     return (0);
 }
-
