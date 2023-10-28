@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
  * main - Entry point of the program
  * @argc: Number of command-line arguments
  * @argv: Array of command-line arguments
