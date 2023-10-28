@@ -29,6 +29,7 @@ int is_positive_number(const char *str)
 int main(int argc, char *argv[])
 {
 	int i, sum = 0;
+
 	if (argc < 2)
 	{
 		printf("0\n");
