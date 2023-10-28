@@ -7,14 +7,12 @@
  */
 int main(int argc, char *argv[])
 {
-	(void)argv;
-	while (argc++)
+	int i = 0;
+
+	while (i < argc)
 	{
-		printf("%d\n", argc);
-		if (argc == '\0')
-		{
-			printf("\n");
-		}
+		printf("%s\n", argv[i]);
+		i++;
 	}
 	return (0);
 }
