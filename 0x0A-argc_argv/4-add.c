@@ -14,8 +14,8 @@ int is_positive_number(const char *str)
 		if (!isdigit(*str))
 		{
 			return (0);
-			str++;
 		}
+		str++;
 	}
 	return (1);
 }
