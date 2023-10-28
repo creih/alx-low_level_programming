@@ -16,12 +16,12 @@ int main(int argc, char *argv[])
 	if (argc != 2)
 	{
 		printf("Error\n");
-		return 1;
+		return (1);
 	}
 	if (cents < 0)
 	{
 		printf("0\n");
-		return 0;
+		return (0);
 	}
 	for (int i = 0; i < num_coins; i++)
 	{
@@ -32,5 +32,5 @@ int main(int argc, char *argv[])
 		}
 	}
 	printf("%d\n", count);
-	return 0;
+	return (0);
 }
