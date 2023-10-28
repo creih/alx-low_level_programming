@@ -1,18 +1,21 @@
 #include <stdio.h>
 /**
  * main - multiplicate func main
- * @argv: 1st argument
- * @argc: 2nd argument
+ * @argv: array of args
+ * @argc: size of argv
  * Return: 0 for success
  */
 int main(int argc, char *argv[])
 {
-	int i = 0;
-
-	while (i < argc)
+	int i, j, k;
+	if (argc != 3)
 	{
-		printf("%s\n", argv[i]);
-		i++;
+		printf("Error\n");
+		return (1);
 	}
+	i = atoi(argv[1]);
+	j = atoi(argv[2]);
+	k = i * j;
+	print("%d\n", k);
 	return (0);
 }
