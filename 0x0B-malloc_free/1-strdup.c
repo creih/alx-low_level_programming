@@ -1,6 +1,6 @@
 #include<stdlib.h>
 /**
- * sdup - return a copy of str parameter
+ * _strdup - return a copy of str parameter
  * @str: original string
  * Return: Null if str non existant
  */
