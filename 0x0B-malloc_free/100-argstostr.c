@@ -22,7 +22,7 @@ int str_len(char *str) {
 char *argstostr(int ac, char **av)
 {
 	char *result = malloc(total_len + 1);
-	int j = 0, index, len, i = 0, total_len = 0;
+	int total_len = 0, j = 0, index, len, i = 0, total_len = 0;
 	
 	if (ac <= 0 || av == NULL)
 	{
@@ -46,7 +46,7 @@ char *argstostr(int ac, char **av)
 		{
 			result[index] = av[i][j];
 			index++;
-			j++
+			j++;
 		}
 		result[index] = '\n';
 		index++;
