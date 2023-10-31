@@ -23,7 +23,7 @@ char *_strdup(char *str)
 	while (i < size)
 	{
 		dup[i] = str[i];
-		i++
+		i++;
 	}
 	return (dup);
 }
