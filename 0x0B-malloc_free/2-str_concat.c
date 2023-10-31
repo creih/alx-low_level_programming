@@ -18,13 +18,12 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	if (s1[i] != '\0')
+	if (s1[size1] != '\0')
 	{
 		size1++;
 		i++;
 	}
-	i = 0;
-	if (s2[i] != '\0')
+	if (s2[size2] != '\0')
 	{
 		size2++;
 		i++;
@@ -35,23 +34,16 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	i = 0;
 	while (i < size1)
 	{
 		concat[i] = s1[i];
 		i++;
 	}
-	size2 = i;
-	i = 0;
-	while (size2 < temp)
+	while (i < size2)
 	{
-		concat[size2] = s2[i];
-		size2++;
+		concat[size1 + i] = s2[i];
 		i++;
 	}
-	if (size2 == temp)
-	{
-		concat[size2] = '\0';
-	}
+	concat[temp] = '\0';
 	return (concat);
 }
