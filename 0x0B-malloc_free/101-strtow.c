@@ -1,13 +1,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * is_space help me know where a word ends
+ * is_space - help me know where a word ends
  * @c: string to review
- * Return: c
+ * Return: c for success
  */
 int is_space(char c)
 {
-	return c == ' ' || c == '\t' || c == '\n';
+	return (c == ' ' || c == '\t' || c == '\n');
 }
 /**
  * count_words - to find out the size of memory needed
