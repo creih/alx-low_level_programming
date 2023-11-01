@@ -1,5 +1,5 @@
-# ifndef methods
-# def methods
+# ifndef METHS_H
+# define METHS_H
 int _putchar(char c);
 int _islower(int c);
 int _isalpa(int c);
