@@ -1,5 +1,4 @@
 #include<stdlib.h>
-#include<stdio.h>
 /**
  * _calloc - allocate memory for array
  * @nmemb: elements of array
@@ -8,15 +7,20 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *point = malloc(size * nmemb);
+	int *point, i = 0;
 
-	if (point == NULL)
-	{
-		return (NULL);
-	}
 	if (nmemb == 0 || size == 0)
 	{
 		retun (NULL);
 	}
-	printf(point);
+	point = malloc(nmemb * size);
+	if (point == NULL)
+	{
+		return (NULL);
+	}
+	while (point[i])
+	{
+		point[i] = 0;
+		i++;
+	}
 }
