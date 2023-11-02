@@ -8,6 +8,7 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	int *point = malloc(size * nmemb);
+	
 	if (point == NULL)
 	{
 		return (NULL);
