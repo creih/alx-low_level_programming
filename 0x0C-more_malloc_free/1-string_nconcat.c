@@ -11,12 +11,12 @@ char *string_nconcat(char s1, char s2, unsigned int n)
 	int size1, size2, i = 0, k = 0;
 	char *mem;
 
-	if (s1 == NULL)
+	if (s1 == '\0')
 	{
 		s1 = "";
 		size1 = sizeof(s1);
 	}
-	else if (s2 == NULL)
+	else if (s2 == '\0')
 	{
 		s2 = "";
 		size2 = sizeof(2);
