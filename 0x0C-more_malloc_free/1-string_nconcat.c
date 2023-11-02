@@ -6,17 +6,17 @@
  * @n: amunt of chars to add to s1 from s2
  * Return: pointer to new memory or NULL
  */
-char *string_nconcat(char s1, char s2, unsigned int n)
+char *string_nconcat(char s1, char *s2, unsigned int n)
 {
 	int size1, size2, i = 0, k = 0;
 	char *mem;
 
-	if (s1 == '\0')
+	if (s1 == NULL)
 	{
 		s1 = "";
 		size1 = sizeof(s1);
 	}
-	else if (s2 == '\0')
+	else if (s2 == NULL)
 	{
 		s2 = "";
 		size2 = sizeof(2);
