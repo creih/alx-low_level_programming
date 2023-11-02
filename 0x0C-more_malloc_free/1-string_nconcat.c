@@ -29,16 +29,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	while (s1[i])
+	while (i < size1)
 	{
 		mem[i] = s1[i];
 		i++;
 	}
-	if (i <= size1 + n)
+	while (i < size1 + n)
 	{
-		mem[i] = s2[k];
-		i++;
+		if (size1 + k < size1 + n)
+		{
+			mem[i] = s2[k];
+		}
 		k++;
+		i++;
 	}
 	mem[size1 + n + 1] = '\0';
 	return (mem);
