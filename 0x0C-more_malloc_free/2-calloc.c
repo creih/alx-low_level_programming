@@ -1,26 +1,28 @@
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 /**
- * _calloc - allocate memory for array
- * @nmemb: elements of array
- * @size: size of array
- * Return: pointer to memory
+ * _calloc - array mem loc
+ * @nmemb: elements
+ * @size: how long ne is
+ * Return: void
  */
-void *_calloc(unsigned int nmemb, unsigned int size)
-{
-	int *point, i = 0;
+void *_calloc(unsigned int nmemb, unsigned int size) {
+	size_t i = 0, total_size;
+	void *ptr;
 
 	if (nmemb == 0 || size == 0)
 	{
-		retun (NULL);
+		return (NULL);
 	}
-	point = malloc(nmemb * size);
-	if (point == NULL)
+	total_size = nmemb * size;
+	ptr = malloc(total_size);
+	if (ptr == NULL)
 	{
 		return (NULL);
 	}
-	while (point[i])
+	while (i < total_size)
 	{
-		point[i] = 0;
+		ptr[i] = 0;
 		i++;
 	}
 }
