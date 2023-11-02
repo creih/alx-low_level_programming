@@ -8,7 +8,7 @@ void *malloc_checked(unsigned int b)
 {
 	char *point = malloc(b);
 
-	if (point != NULL)
+	if (point)
 	{
 		return (point);
 	}
