@@ -6,9 +6,10 @@
  * @size: how long ne is
  * Return: void
  */
-void *_calloc(unsigned int nmemb, unsigned int size) {
+void *_calloc(unsigned int nmemb, unsigned int size)
+{
 	size_t i = 0, total_size;
-	void *ptr;
+	char *ptr;
 
 	if (nmemb == 0 || size == 0)
 	{
