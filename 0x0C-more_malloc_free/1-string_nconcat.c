@@ -8,7 +8,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int size, i = 0, k = 0;
+	unsigned int size = 0, i = 0, k = 0;
 	char *mem;
 
 	if (s1 == NULL)
@@ -33,7 +33,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		mem[i] = s1[i];
 		i++;
 	}
-	while (k < n && s2[k] != '\0')
+	while (k < n)
 	{
 		mem[i] = s2[k];
 		k++;
