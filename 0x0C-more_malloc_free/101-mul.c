@@ -3,7 +3,7 @@
 /**
  * mul - multiply 2 nbrs
  * @argc: nbr of arguments
- * argv: actual arguments vector
+ * @argv: actual arguments vector
  * Return: idk yet
  */
 void mul(int argc, char argv[])
