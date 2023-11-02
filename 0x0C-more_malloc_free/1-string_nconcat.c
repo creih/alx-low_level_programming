@@ -1,4 +1,4 @@
-#include<stdlib.h>
+#include <stdlib.h>
 /**
  * string_nconcat - adds n chars of s2 to s1
  * @s1: string to add on
@@ -15,7 +15,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s1 = "";
 	}
-	else if (s2 == NULL)
+	if (s2 == NULL)
 	{
 		s2 = "";
 	}
@@ -23,22 +23,30 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		size++;
 	}
+	while (s2[i] = '\0')
+	{
+		i++;
+	}
+	if (n >= i)
+	{
+		n = i;
+	}
 	mem = malloc(size + n + 1);
 	if (mem == NULL)
 	{
 		return (NULL);
 	}
-	while (i < size)
+	while (k < size)
 	{
-		mem[i] = s1[i];
-		i++;
+		mem[k] = s1[k];
+		k++;
 	}
+	k=0;
 	while (k < n)
 	{
-		mem[i] = s2[k];
+		mem[k + size] = s2[k];
 		k++;
-		i++;
 	}
-	mem[i] = '\0';
+	mem[size + n] = '\0';
 	return (mem);
 }
