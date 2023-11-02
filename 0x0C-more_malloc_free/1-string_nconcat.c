@@ -41,7 +41,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		mem[k] = s1[k];
 		k++;
 	}
-	k=0;
+	k = 0;
 	while (k < n)
 	{
 		mem[k + size] = s2[k];
