@@ -8,7 +8,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int size1, size2, i = 0, k = 0;
+	unsigned int size1, i = 0, k = 0;
 	char *mem;
 
 	if (s1 == NULL)
@@ -19,14 +19,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	else if (s2 == NULL)
 	{
 		s2 = "";
-		size2 = sizeof(s2);
 	}
 	else
 	{
 		size1 = sizeof(s1);
-		size2 = sizeof(s2);
 	}
-
 	mem = malloc(size1 + n + 1);
 	if (!mem)
 	{
