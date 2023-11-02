@@ -6,7 +6,7 @@
  * @n: amunt of chars to add to s1 from s2
  * Return: pointer to new memory or NULL
  */
-char *string_nconcat(char s1, char *s2, unsigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	int size1, size2, i = 0, k = 0;
 	char *mem;
