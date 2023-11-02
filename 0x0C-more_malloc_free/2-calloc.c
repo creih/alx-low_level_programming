@@ -1,4 +1,5 @@
 #include<stdlib.h>
+#include<stdio.h>
 /**
  * _calloc - allocate memory for array
  * @nmemb: elements of array
@@ -17,5 +18,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		retun (NULL);
 	}
-	return (point);
+	printf(point);
 }
