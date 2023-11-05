@@ -8,16 +8,16 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *ptr;
+	char *memory;
 
+	memory = malloc(nmemb * sizeof(size));
+	if (!memory)
+	{
+		return (NULL);
+	}
+	memory = 0;
 	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
-	ptr = malloc(nmemb * size);
-	if (ptr == NULL)
-	{
-		return (NULL);
-	}
-	return (ptr);
 }
