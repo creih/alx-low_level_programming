@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * string_nconcat - adds n chars of s2 to s1
  * @s1: string to add on
@@ -39,5 +40,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		i++;
 	}
 	mem[size + n] = '\0';
+	printf(sizeof(mem));
 	return (mem);
 }
