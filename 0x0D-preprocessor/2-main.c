@@ -3,7 +3,7 @@
  * main - print filenname it was compiled from
  * Return: 0
  */
-void main(void)
+int main(void)
 {
 	printf("%s\n", __FILE__);
 }
