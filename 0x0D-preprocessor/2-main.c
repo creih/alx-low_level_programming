@@ -5,5 +5,5 @@
  */
 void main(void)
 {
-	printf("%c\n", __FILE__);
+	printf("%s\n", __FILE__);
 }
