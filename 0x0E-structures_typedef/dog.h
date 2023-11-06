@@ -6,10 +6,10 @@
  * @owner: the perso the dog can be traced back to.
  * @age: age of that dog
  */
-struct do
+typedef struct dog
 {
 	char *name;
-	float ag;
+	float age;
 	char *owner;
 
 }
