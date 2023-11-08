@@ -1,5 +1,5 @@
-/*
- *print_name - decides wether to print uppercase or as_is
+/**
+ * print_name - decides wether to print uppercase or as_is
  * @name: points to name
  * @f: points to chosen function
  * Return: NULL
