@@ -21,16 +21,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		digit = va_arg(ints, int);
 		printf("%d", digit);
-		if (i == n - 1)
-		{
-			printf("\n");
-			return;
-		}
-		else
-		{
+		if (i < n - 1)
 			printf("%s", separator);
-		}
 		i++;
 	}
+	printf("\n")
 	va_end(ints);
 }
