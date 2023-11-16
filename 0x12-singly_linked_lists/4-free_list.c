@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 /**
  * free_list - frees as the name suggests
  * @head: pointer to start
