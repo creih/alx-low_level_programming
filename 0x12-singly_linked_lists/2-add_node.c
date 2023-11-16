@@ -1,4 +1,4 @@
-#include "main.c"
+#include "lists.h"
 /**
  * add_node - add new node
  * @head:pointer to beggining of list
