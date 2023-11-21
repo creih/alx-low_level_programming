@@ -26,8 +26,8 @@ size_t print_listint_safe(const listint_t *head)
 			tort = head;
 			counter++;
 			har = har->next;
-		}
 			break;
+		}
 	}
 	return (counter);
 }
