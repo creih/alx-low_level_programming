@@ -23,8 +23,11 @@ size_t print_listint_safe(const listint_t *head)
 		if (tort == har)
 		{
 			printf("-> [%p] %d\n", (void *)tort, tort->n);
-			break;
+			tort = head;
+			counter++;
+			har = har->next;
 		}
+			break;
 	}
 	return (counter);
 }
