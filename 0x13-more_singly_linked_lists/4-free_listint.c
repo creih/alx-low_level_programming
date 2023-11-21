@@ -2,7 +2,6 @@
 /**
  * free_listint - frees allocated memory for list
  * @head: ptr to list to be freed
- * @Return: void
  */
 void free_listint(listint_t *head)
 {
