@@ -1,8 +1,8 @@
-#include "lists,h"
+#include "lists.h"
 /**
- *
- *
- *
+ * pop_listint - pop first node
+ * @head: pointer of list
+ * returns node data
  */
 int pop_listint(listint_t **head)
 {
