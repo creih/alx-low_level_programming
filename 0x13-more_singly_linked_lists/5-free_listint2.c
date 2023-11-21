@@ -5,21 +5,17 @@
  */
 void free_listint2(listint_t **head)
 {
-	listint_t *temp;
+	listint_t *temp, *current;
 
-	if (*head == NULL)
+	if (head != NULL)
 	{
-		*head = NULL;
-	}
-	else
-	{
-		while (*head != NULL)
+		temp = *head;
+		while (temp != NULL)
 		{
-			temp = *head;
-			*head = (*head)->next;
-			free(temp);
+			current = temp;
+			temp = temp->next;
+			free(current);
 		}
 		*head = NULL;
-		printf("%p\n", (void *)*head ? (void *)*head : (void *)0);
 	}
 }
