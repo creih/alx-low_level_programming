@@ -6,7 +6,7 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	const listint_t *tort, har;
+	const listint_t *tort, *har;
 	size_t counter = 0;
 
 	if (har && har->next)
