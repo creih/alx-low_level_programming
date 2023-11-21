@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 /**
  * print_listint_safe - prints no loop
  * @head: ptr to list
@@ -24,9 +25,13 @@ size_t print_listint_safe(const listint_t *head)
 		{
 			printf("-> [%p] %d\n", (void *)tort, tort->n);
 			tort = head;
-			while (tort != har)
+			while (1)
 			{
 				printf("[%p] %d\n", (void *)tort, tort->n);
+				if(tort ==har)
+				{
+					break;
+				}
 				tort = tort->next;
 				har = har->next;
 				counter++;
