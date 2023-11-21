@@ -8,13 +8,13 @@ listint_t *find_listint_loop(listint_t *head)
 {
 	listint_t *tort, *har;
 
-	if (head == NULL || head->next ==NULL)
+	if (head == NULL || head->next == NULL)
 	{
 		return (NULL);
 	}
 	tort = head->next;
 	har = head->next->next;
-	while(har && har->next)
+	while (har && har->next)
 	{
 		if (tort == har)
 		{
