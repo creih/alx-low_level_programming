@@ -2,7 +2,7 @@
 /**
  * print_listint - for printing lists
  * @h: ptr to lists
- * Return : size of the list
+ * Return: size of the list
  */
 size_t print_listint(const listint_t *h)
 {
@@ -17,7 +17,7 @@ size_t print_listint(const listint_t *h)
 		{
 			printf("%d\n", temp->n);
 			temp = temp->next;
-			counter++; 
+			counter++;
 		}
 		return (counter);
 	}
