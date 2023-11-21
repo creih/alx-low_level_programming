@@ -24,8 +24,13 @@ size_t print_listint_safe(const listint_t *head)
 		{
 			printf("-> [%p] %d\n", (void *)tort, tort->n);
 			tort = head;
-			counter++;
-			har = har->next;
+			while (tort != har)
+			{
+				printf("[%p] %d\n", (void *)tort, tort->n);
+				tort = tort->next;
+				har = har->next;
+				counter++;
+			}
 			break;
 		}
 	}
