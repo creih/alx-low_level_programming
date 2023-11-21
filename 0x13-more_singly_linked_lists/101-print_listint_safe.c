@@ -9,9 +9,9 @@ size_t print_listint_safe(const listint_t *head)
 	const listint_t *tort, *har;
 	size_t counter = 0;
 
-	if (har && har->next)
+	if (head == NULL)
 	{
-		exit(99);
+		exit(98);
 	}
 	tort = har = head;
 	while (har && har->next)
