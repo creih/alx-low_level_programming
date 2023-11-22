@@ -1,9 +1,8 @@
 #include "lists.h"
 /**
- *
- *
- *
- *
+ * sum_listint - sums up all elements in list
+ * @head: ptr to list
+ * Return: sum or 0
  */
 int sum_listint(listint_t *head)
 {
