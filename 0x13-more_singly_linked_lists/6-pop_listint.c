@@ -2,7 +2,7 @@
 /**
  * pop_listint - pop first node
  * @head: pointer of list
- * returns node data
+ * Return: node data
  */
 int pop_listint(listint_t **head)
 {
