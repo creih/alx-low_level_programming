@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * flip bits - nbr of bits to change to have similar nbrs
+ * flip_bits - nbr of bits to change to have similar nbrs
  * @n: nbr uno
  * @m: dos numero
  * Return: nbr of bits to change
