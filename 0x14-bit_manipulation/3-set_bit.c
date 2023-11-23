@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * set_bit - sets a bit to 1 of index
- * @n: actual nbr 
+ * @n: actual nbr
  * @index: index to set
  * Return: 1 success -1 failure
  */
