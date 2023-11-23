@@ -8,6 +8,8 @@ void print_binary(unsigned long int n)
 	unsigned int bar; 
 	int bara = sizeof(n) * 8 - 1;
 
+	if (n == 0)
+		_putchar('0');
 	while (bara >= 0)
 	{
 		bar = (n >> bara) & 1;
