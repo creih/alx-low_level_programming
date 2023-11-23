@@ -2,7 +2,8 @@
 /**
  * clear_bit - set value at index to 0
  * @n: nbr
- * @index: index to chane at
+ * @index: index to change at
+ * Return: 1 if right else -1
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
