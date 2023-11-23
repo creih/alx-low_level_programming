@@ -12,6 +12,7 @@ void print_binary(unsigned long int n)
 	{
 		bar = (n >> bara) & 1;
 		_putchar(bar);
+		_putchar("\n");
 		bara--;
 	}
 }
