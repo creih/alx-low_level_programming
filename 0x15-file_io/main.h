@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <fcntl.h>
 #include <string.h>
+#include <elf.h>
 #define BUFF_SIZE 64
 void print_ikosa(const char *message);
 void print_elf_header_info(ELF64_Ehdr *header);
