@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
+#include "main.h"
 /**
  * read_textfile: func to do the work
  * @letters: nbr of letters to read
@@ -15,7 +13,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (filename == NULL)
 		return (0);
-	tunga_file = fopen(filename, "r");
+	tunga_doc = fopen(filename, "r");
 	if (tunga_doc == NULL)
 		return (0);
 	container = (char *)malloc(letters);
@@ -38,7 +36,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(container);
 		return (0);
 	}
-	fclose(tunga_file);
+	fclose(tunga_doc);
 	free(container);
 	return (izanditswe);
 }
