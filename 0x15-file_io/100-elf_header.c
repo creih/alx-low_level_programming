@@ -11,11 +11,14 @@ void print_ikosa(const char *message) {
  * print_elf_header_info - prints the elf header content
  * @header: ptr to the header info
  */
-void print_elf_header_info(Elf64_Ehdr *header) {
+void print_elf_header_info(Elf64_Ehdr *header)
+{
+	int i = 0;
 	printf("  Magic:   ");
-	for (int i = 0; i < EI_NIDENT; i++)
+	while (i < EI_NIDENT)
 	{
 		printf("%02x ", header->e_ident[i]);
+		i++;
 	}
 	printf("\n");   
 	printf("  Class:                             %s\n", (header->e_ident[EI_CLASS] == ELFCLASS32) ? "ELF32" : "ELF64");
