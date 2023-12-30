@@ -5,6 +5,7 @@ section .text
 	extern printf
 	global main
 main:
+	sub rsp, 8
 	; Prepare the arguments for printf
 	mov rdi, format
 	mov rsi, hello
