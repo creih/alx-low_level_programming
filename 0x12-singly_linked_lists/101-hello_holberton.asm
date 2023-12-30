@@ -2,8 +2,7 @@ section .data
 	hello db 'Hello, Holberton', 0
 	format db '%s', 0
 section .text
-	extern printf
-	extern fflush
+	extern printf, fflush
 	global main
 main:
 	sub rsp, 8
