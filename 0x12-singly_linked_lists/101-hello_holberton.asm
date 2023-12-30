@@ -10,6 +10,7 @@ main:
 	mov rsi, hello
 	; Call printf
 	call printf
+	add rsp, 8
 	; Exit the program
 	mov eax, 0
 	ret
