@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * read_textfile - func to do the work
+ * read_textfile - func to retrieve some chars
  * @letters: nbr of letters to read
  * @filename: ptr to the file we'll be using
  * Return: 0 if anything goes wrong
