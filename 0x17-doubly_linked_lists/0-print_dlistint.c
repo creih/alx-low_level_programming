@@ -10,7 +10,7 @@ size_t print_dlistint(const dlistint_t *h)
 	const dlistint_t *evolve = h;
 	size_t umubare = 0;
 
-	while (evolve->next != NULL)
+	while (evolve != NULL)
 	{
 		printf("%d\n", evolve->n);
 		evolve = evolve->next;
