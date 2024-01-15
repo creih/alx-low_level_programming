@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * _strchr -locate a char
  * @s: pointer to sth
