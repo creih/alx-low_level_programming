@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * _strlen -function to printlength
  * @s: character to be used

@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * _strncpy - to copy string
  * @dest: 2nd pointer
