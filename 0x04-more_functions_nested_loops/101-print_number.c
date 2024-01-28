@@ -12,5 +12,6 @@ void print_number(int n)
 		a = n % 10;
 		_putchar(n);
 		_putchar(a);
+		n = n / 10;
 	}
 }
