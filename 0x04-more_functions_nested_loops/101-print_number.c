@@ -5,5 +5,12 @@
  */
 void print_number(int n)
 {
-	_putchar(n);
+	int a;
+
+	while (n != 0)
+	{
+		a = n % 10;
+		_putchar(n);
+		_putchar(a);
+	}
 }
