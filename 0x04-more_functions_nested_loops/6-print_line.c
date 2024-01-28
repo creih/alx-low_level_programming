@@ -4,7 +4,7 @@
  * @n: nbr of time to print _
  * Return: return nothing
  */
-void print_lines(int n)
+void print_line(int n)
 {
 	int nbr;
 
