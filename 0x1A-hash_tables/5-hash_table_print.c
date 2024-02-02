@@ -7,7 +7,7 @@ void hash_table_print(const hash_table_t *ht)
 {
     unsigned long int i;
     hash_node_t *node;
-    int first = 1;  // Flag to track if it's the first key/value pair
+    int first = 1;  /* Flag to track if it's the first key/value pair */
 
     if (ht == NULL)
         return;
