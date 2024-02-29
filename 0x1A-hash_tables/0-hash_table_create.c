@@ -2,7 +2,7 @@
 /**
  * hash_table_create - Creates a hash table
  * @size: The size of array
- * Return: pointer to created hash table, NULL if error
+ * Return: ptr to created hash table, NULL if error
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
@@ -22,6 +22,6 @@ hash_table_t *hash_table_create(unsigned long int size)
 	}
 	new_t->size = size;
 	for (i = 0; i < size; i++)
-	new_t->array[i] = NULL;
+		new_t->array[i] = NULL;
 	return (new_t);
 }
