@@ -12,5 +12,5 @@ $(NAME): $(OBJ)
 	$(CC) -c -o $@ $<
 
 clean:
-	rm -f $(OBJ) $(NAME)
+	rm -f $(OBJ)
 
