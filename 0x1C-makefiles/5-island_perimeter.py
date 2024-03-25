@@ -1,19 +1,12 @@
 #!/usr/bin/python3
+"""
+this file is all about this function calculating perimeter
+"""
+
 
 def island_perimeter(grid):
     """
     Calculate the perimeter of the island described in the grid.
-
-    Args:
-    - grid (list of list of int): Represents the island grid.
-
-    Returns:
-    - int: The perimeter of the island.
-
-    Constraints:
-    - Grid is rectangular with width and height not exceeding 100.
-    - Grid is completely surrounded by water, and there is only 
-    - The island doesn’t have lakes
     """
     perimeter = 0
     rows, cols = len(grid), len(grid[0])
