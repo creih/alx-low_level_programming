@@ -14,7 +14,7 @@ $(NAME): $(OBJ)
 %.o: %.c
 	$(CC) -c -o $@ $<
 clean:
-	$(RM) $(T_FILE) $(EXE_FILE)
+	$(RM) $(T_FILE) $(NAME)
 oclean:
 	$(RM) $(OBJ)
 fclean:
