@@ -3,18 +3,20 @@ SRC = main.c school.c
 OBJ = $(SRC:.c = .o)
 NAME = school
 RM = rm -f
+T_FILE = *~ .*~
+EXE_FILE = $(NAME) $(OBJ)
 
 .PHONY: all clean oclean fclean re
 
-all: compile
-compile:
+all: $(NAME)
+$(NAME): $(OBJ)
 	$(CC) -o $@ $^
 %.o: %.c
 	$(CC) -c -o $@ $<
 clean:
-	$(RM) *~ .* $(NAME) $(OBJ)
+	$(RM) $(T_FILE) $(EXE_FILE)
 oclean:
 	$(RM) $(OBJ)
 fclean:
-	$(RM) *~ .*~ $(NAME) $(OBJ)
+	$(RM) $(T_FILE) $(EXE_FILE)
 re: fclean all
