@@ -1,4 +1,3 @@
 build:
 	gcc *.* -o school
-all: school
-	
+all: build	
