@@ -1,9 +1,8 @@
 CC = gcc
 SRC = main.c school.c
-OBJ = main.o school.o
 NAME = school
 build_1:
 	${CC} ${SRC} -o ${NAME}
-clear:
-	rm ${OBJ}
-all: build_1 clear
+	SRC = *.o
+	rm *.o
+all: build_1
