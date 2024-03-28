@@ -1,6 +1,6 @@
 CC = gcc
-CFLAGS = -Wall -Werror -Wextra -pedantic
-SRC = main.c school.c file1.c file2.c
+CFLAGS := -Wall -Werror -Wextra -pedantic
+SRC = main.c school.c
 OBJ = ${SRC:.c=.o}
 NAME = school
 RM = rm
@@ -9,9 +9,6 @@ all: ${NAME}
 
 ${NAME}: ${OBJ}
     ${CC} ${CFLAGS} -o ${NAME} ${OBJ}
-
-%.o: %.c
-    $(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	${RM} *~ ${NAME}
