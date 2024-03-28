@@ -1,0 +1,29 @@
+# task ya nyuma
+CC = gcc
+
+SRC = main.c school.c
+
+OBJ = $(SRC:.c=.o)
+
+NAME = school
+
+CFLAGS = -Wall -Werror -Wextra -pedantic
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) -o $(NAME) $(OBJ) $(CFLAGS)
+
+clean:
+	@-$(RM) *~ $(NAME)
+
+oclean:
+	@-$(RM) $(OBJ)
+
+fclean: clean oclean
+
+re: fclean all
+
+# ese m.h irahari
+ifeq ($(wildcard m.h),)
+$(error Header file m.h not found)
+endif
