@@ -1,41 +1,28 @@
-# Compiler and flags
+# task ya 4 
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
-# Source files
 SRC = school.c main.c
 
-# Object files
 OBJ = $(SRC:.c=.o)
 
-# Executable name
 NAME = school
 
-# Program to delete files
 RM = rm -f
 
-# Default target: Builds the executable
 all: $(NAME)
 
-# Rule to build the executable
 $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) -o $(NAME) $(OBJ)
 
-# Rule to compile source files into objectt  
-
-# Rule to clean Emacs and Vim temporary files and the executable
 clean:
 	$(RM) *~ $(NAME)
 
-# Rule to delete object files
 oclean:
 	$(RM) $(OBJ)
 
-# Rule to delete all Emacs and Vim temporary files, the executable, and object files
 fclean: clean oclean
 
-# Rule to force recompilation of all source files
 re: fclean all
 
-# Make clean, oclean, fclean, and re rules never fail
 .PHONY: clean oclean fclean re
