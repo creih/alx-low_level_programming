@@ -7,11 +7,10 @@ OBJ = $(SRC:.c=.o)
 
 NAME = school
 
-CFLAGS = -Wall -Werror -Wextra -pedantic
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) -o $(NAME) $(OBJ) $(CFLAGS)
+	$(CC) -o $(NAME) $(OBJ) -Wall -Werror -pedentic -Wextra
 
 clean:
 	@-$(RM) *~ $(NAME)
