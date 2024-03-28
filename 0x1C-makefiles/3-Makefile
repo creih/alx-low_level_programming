@@ -1,19 +1,28 @@
+# task ya 3
 CC = gcc
+
 SRC = main.c school.c
-OBJ = $(SRC:.c = .o)
+
+OBJ = $(SRC:.c=.o)
+
 NAME = school
-RM = rm
-EXE_FILE = $(NAME) $(OBJ)
+
+RM = rm -f
 
 all: $(NAME)
+
 $(NAME): $(OBJ)
 	$(CC) -o $(NAME) $(OBJ)
+
 %.o: %.c
 	$(CC) -c $< -o $@
+
 clean:
 	$(RM) *~ $(NAME)
+
 oclean:
 	$(RM) $(OBJ)
+
 fclean: clean oclean
 re: fclean all
 .PHONY: clean oclean fclean re
